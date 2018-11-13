@@ -13,13 +13,13 @@ cd 'your-folder'
 git clone https://github.com/markovmodel/deeptime.git
 
 # create conda env
-conda create -n torch python=3.6
+# install numpy 1.13 and pyemma 2.4 (since newer versions to date don't harmonize with deeptime)
+# to run the included benchmarks, you also need to install the packages pyemma and mdshare
+# since the tae example is a jupyter notebook, the jupyter package is needed to run them
+conda create -n torch python=3.6 numpy=1.13.3 pyemma=2.4 jupyter mdshare -c conda-forge
 
 # activate the created environment
 source activate torch
-
-# install numpy 1.13 (since newer versions to date don't harmonize with deeptime)
-pip install numpy=1.13.3
 
 # install torch (cuda 9)
 conda install pytorch torchvision cuda90 -c pytorch
@@ -31,11 +31,4 @@ python -c 'import torch; print(torch.rand(2,3).cuda())'
 cd deeptime/time-lagged-autoencoder
 python setup.py test
 python setup.py install
-
-# to run the included benchmarks, you also need to install the packages pyemma and mdshare
-conda install pyemma -c conda-forge
-conda install mdshare -c conda-forge
-
-# since the tae example is a jupyter notebook, the jupyter package is needed to run them
-conda install jupyter
 ```
