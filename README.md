@@ -16,7 +16,7 @@ git clone https://github.com/markovmodel/deeptime.git
 # install numpy 1.13 and pyemma 2.4 (since newer versions to date don't harmonize with deeptime)
 # to run the included benchmarks, you also need to install the packages pyemma and mdshare
 # since the tae example is a jupyter notebook, the jupyter package is needed to run them
-conda create -n torch python=3.6 numpy=1.13.3 pyemma=2.4 jupyter mdshare -c conda-forge
+conda create -n tae python=3.6 numpy=1.13.3 pyemma=2.4 jupyter mdshare -c conda-forge
 
 # activate the created environment
 source activate torch
