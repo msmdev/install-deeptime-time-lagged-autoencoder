@@ -19,7 +19,7 @@ git clone https://github.com/markovmodel/deeptime.git
 conda create -n tae python=3.6 numpy=1.13.3 pyemma=2.4 jupyter mdshare -c conda-forge
 
 # activate the created environment
-source activate torch
+source activate tae
 
 # install torch (cuda 9)
 conda install pytorch torchvision cuda90 -c pytorch
