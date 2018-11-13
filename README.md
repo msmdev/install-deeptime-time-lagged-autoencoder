@@ -19,7 +19,7 @@ conda create -n torch python=3.6
 source activate torch
 
 # install numpy 1.13 (since newer versions to date don't harmonize with deeptime)
-pip install numpy=1.13
+pip install numpy=1.13.3
 
 # install torch (cuda 9)
 conda install pytorch torchvision cuda90 -c pytorch
