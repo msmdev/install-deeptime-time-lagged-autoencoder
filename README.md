@@ -16,10 +16,10 @@ git clone https://github.com/markovmodel/deeptime.git
 conda create -n torch python=3.6
 
 # activate the created environment
-conda activate torch
+source activate torch
 
-# install numpy
-pip install numpy
+# install numpy 1.13 (since newer versions to date don't harmonize with deeptime)
+pip install numpy=1.13
 
 # install torch (cuda 9)
 conda install pytorch torchvision cuda90 -c pytorch
