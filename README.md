@@ -3,7 +3,7 @@ Instructions to install the time-lagged autoencoder (tae) package (https://githu
 
 After following this instructions you will have:
 
-1. GPU enabled pytorch.
+1. GPU enabled pytorch (assuming you have a CUDA capable GPU and the nvidia drivers and CUDA installed).
 2. The time-lagged autoencoder package from deeptime.
 3. PyEMMA (https://github.com/markovmodel/PyEMMA) and mdshare.
 
